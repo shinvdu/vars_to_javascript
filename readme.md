@@ -1,4 +1,4 @@
-# Transform PHP Vars to JavaScript
+# Transform PHP Vars to JavaScript For Drupal 8
 
 Often, you'll find yourself in situations, where you want to pass some server-side string/array/collection/whatever
 to your JavaScript. Traditionally, this can be a bit of a pain - especially as your app grows.

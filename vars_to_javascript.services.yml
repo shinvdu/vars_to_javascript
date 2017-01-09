@@ -1,0 +1,5 @@
+services:
+  javascript:
+    class: Drupal\vars_to_javascript\JavascriptService
+    arguments: []
+

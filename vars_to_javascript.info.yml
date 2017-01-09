@@ -1,0 +1,5 @@
+name: VarsToJavascript
+type: module
+description: Transform PHP types to JavaScript
+core: 8.x
+package: tools

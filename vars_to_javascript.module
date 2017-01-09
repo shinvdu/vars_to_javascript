@@ -1,0 +1,45 @@
+<?php
+
+/**
+ * @file
+ * Contains vars_to_javascript.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function vars_to_javascript_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the vars_to_javascript module.
+    case 'help.page.vars_to_javascript':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Transform PHP types to JavaScript') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+function phpexcel_preprocess_html(&$variables) {
+  $set_bottom_script = [
+  '#type' => 'inline_template',
+  '#template' => '{{ javascript|raw }}',
+  '#context' => [
+  'javascript' => set_bottom_script(),
+  ]      
+  ];
+
+  $variables['page_bottom'] = ['bottom_script' => $set_bottom_script];
+}
+
+function set_bottom_script($js = NULL){
+  global $bottom_script ;
+  if ($js) {
+    $bottom_script = $js;
+  }else{
+    return $bottom_script;
+  }
+}

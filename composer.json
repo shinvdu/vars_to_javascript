@@ -1,0 +1,16 @@
+{
+  "name": "drupal/vars_to_javascript",
+  "type": "drupal-module",
+  "description": "Transform PHP types to JavaScript",
+  "keywords": ["Drupal", "Transform PHP types to JavaScript"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/vars_to_javascript",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/vars_to_javascript",
+    "source": "http://cgit.drupalcode.org/vars_to_javascript"
+  },
+  "require": { 
+  "laracasts/utilities": "^2.1"    
+  }
+}

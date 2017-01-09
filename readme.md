@@ -9,8 +9,6 @@ This package simplifies the process drastically.
 
 Download vars_to_javascript to module direcotry, then run composer install
 
-> If you use Laravel 4: instead install `~1.0` of this package (and use the documentation for that release). For Laravel 5 (or non-Laravel), `~2.0` will do the trick!
-
 ### Drupal Users
 
 1. enable the moudle
